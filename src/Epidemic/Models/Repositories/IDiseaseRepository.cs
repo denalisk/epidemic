@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace Epidemic.Models.Repositories
 {
-    public interface IDiseaseRepository<Disease>
+    public interface IDiseaseRepository
     {
-        IQueryable<Disease> ReturnedObjects { get; }
+        IQueryable<Disease> Diseases { get; }
         Disease Save(Disease disease);
     }
 }

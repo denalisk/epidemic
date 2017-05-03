@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Epidemic.Models;
 
 namespace Epidemic.Models.Repositories
 {
     public class EFGameRepo : IGameRepository
     {
-        EpidemicDbContext db = EpidemicDbContext();
+        EpidemicDbContext db = new EpidemicDbContext();
 
         public IQueryable<Game> Games
         { get { return db.Games; } }

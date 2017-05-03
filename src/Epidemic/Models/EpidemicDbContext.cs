@@ -8,7 +8,11 @@ using System.Threading.Tasks;
 namespace Epidemic.Models
 {
     public class EpidemicDbContext : IdentityDbContext<User>
-    {
+    { 
+        public EpidemicDbContext()
+        {
+
+        }
         public EpidemicDbContext(DbContextOptions options) : base(options)
         {
 

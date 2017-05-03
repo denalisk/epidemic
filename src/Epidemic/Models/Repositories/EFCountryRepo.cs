@@ -15,7 +15,7 @@ namespace Epidemic.Models.Repositories
 
         public Country Save(Country country)
         {
-            db.Countrys.Add(country);
+            db.Countries.Add(country);
             db.SaveChanges();
             return country;
         }
@@ -29,7 +29,7 @@ namespace Epidemic.Models.Repositories
 
         public void Remove(Country country)
         {
-            db.Countrys.Remove(country);
+            db.Countries.Remove(country);
             db.SaveChanges();
         }
     }
